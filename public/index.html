@@ -23,6 +23,10 @@
             console.log('Escuchando ', payload);
         });
 
+        client.on('questions', function(payload){
+            console.log('Questions ', payload);
+        });
+
         client.emit('message', 'Hola')
     </script>
 </body>
